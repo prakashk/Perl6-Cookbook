@@ -16,7 +16,6 @@ no_index:
   directory:
     - t
     - xt
-    - eg
     - share
     - inc
     - eg
@@ -26,4 +25,4 @@ requires:
   perl: 5.008000
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02

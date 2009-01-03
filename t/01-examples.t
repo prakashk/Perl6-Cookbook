@@ -24,10 +24,15 @@ my @files = glob catdir('eg', '*', '*.p6');
 
 plan tests => 2 * @files;
 
-my %TODO = map {$_ => 1} qw(
+my %TODO_out = map {$_ => 1} qw(
 	eg/01_Strings/02_Establishing_a_Default_Value.p6
 );
 
+my %TODO = map {$_ => 1} qw(
+	eg/01_Strings/01_Accessing_Substrings_unpack.p6
+);
+
+$TODO{out} = \%TODO_out;
 
 my $dir = tempdir( CLEANUP => 1 );
 my $err = catfile( $dir, 'err.txt' );
@@ -42,7 +47,7 @@ foreach my $file (sort @files) {
 		my @expected      = slurp($expected_file);
 		my @received      = slurp( catfile( $dir, "$std.txt" ) );
 		my $name          = "STD" . uc($std) . " of $file";
-		if ($TODO{$file}) {
+		if ($TODO{$file} or $TODO{$std}{$file}) {
 			TODO: {
 				local $TODO = "Feature of $file no implemented yet in Rakudo";
 				is_deeply(\@received, \@expected, $name);

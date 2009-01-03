@@ -3,7 +3,7 @@ package Perl6::Cookbook;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -13,6 +13,9 @@ Perl6::Cookbook - Examples in Perl 6
 
 =head1 DESCRIPTION
 
+See also
+Rakudo Feature status:
+L<http://www.perlfoundation.org/perl6/index.cgi?rakudo_feature_status>
 
 =head1 COPYRIGHT
 

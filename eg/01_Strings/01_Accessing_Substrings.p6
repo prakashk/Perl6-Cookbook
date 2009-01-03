@@ -24,5 +24,3 @@ $z.say;
 #$s.say;                                 # $s = The black cat jumped from the green tree
 
 # TODO: see also unpack for faster extraction
-
-

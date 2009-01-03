@@ -1,5 +1,10 @@
+Changes
 eg/01_Strings/01_Accessing_Substrings.p6
+eg/01_Strings/01_Accessing_Substrings_unpack.p6
 eg/01_Strings/02_Establishing_a_Default_Value.p6
+eg/01_Strings/03_Exchanging_Values_Without_Using_Temporary_Variables.p6
+eg/01_Strings/04_Converting_Between_Characters_and_Values.p6
+eg/01_Strings/06_Processing_a_String_One_Character_at_a_Time.p6
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
@@ -15,4 +20,8 @@ MANIFEST			This list of files
 META.yml
 t/01-examples.t
 t/files/01_Strings/01_Accessing_Substrings.out
+t/files/01_Strings/01_Accessing_Substrings_unpack.out
 t/files/01_Strings/02_Establishing_a_Default_Value.out
+t/files/01_Strings/03_Exchanging_Values_Without_Using_Temporary_Variables.out
+t/files/01_Strings/04_Converting_Between_Characters_and_Values.out
+t/files/01_Strings/06_Processing_a_String_One_Character_at_a_Time.out
