@@ -1,5 +1,9 @@
 Changes of Perl6::Cookbook
 
+v0.03 2008.01.21
+    More examples
+    Eliminate all TODO tests as they all pass now
+
 v0.02 2009.01.03
 	Add three more examples
 	TODO Test can now be separated for the STDOUT and STDERR

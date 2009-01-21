@@ -25,12 +25,12 @@ my @files = glob catdir('eg', '*', '*.p6');
 plan tests => 2 * @files;
 
 my %TODO_out = map {$_ => 1} qw(
-	eg/01_Strings/02_Establishing_a_Default_Value.p6
 );
+	#eg/01_Strings/02_Establishing_a_Default_Value.p6
 
 my %TODO = map {$_ => 1} qw(
-	eg/01_Strings/01_Accessing_Substrings_unpack.p6
 );
+	#eg/01_Strings/01_Accessing_Substrings_unpack.p6
 
 $TODO{out} = \%TODO_out;
 
