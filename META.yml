@@ -1,5 +1,5 @@
 ---
-abstract: 'Examples in Perl 6'
+abstract: 'The Perl Cookbook examples implemented in Perl 6'
 author:
   - 'Gabor Szabo <szabgab@gmail.com>'
 build_requires:
@@ -18,10 +18,15 @@ no_index:
     - xt
     - share
     - inc
+    - privinc
+    - eg
+    - eg
+    - inc
+    - t
 requires:
   File::ShareDir: 1.00
   perl: 5.008000
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://svn1.hostlocal.com/szabgab/trunk/Perl6-Cookbook
-version: 0.04
+version: 0.05

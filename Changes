@@ -1,5 +1,9 @@
 Changes of Perl6::Cookbook
 
+v0.05 2009.01.23
+
+    Create Perl6::Cookbook/*.pod files for all the chapters.
+
 v0.04 2009.01.23
     More examples
     Special case in testing random numbers
@@ -13,9 +17,9 @@ v0.03 2009.01.21
     Eliminate all TODO tests as they all pass now
 
 v0.02 2009.01.03
-	Add three more examples
-	TODO Test can now be separated for the STDOUT and STDERR
+    Add three more examples
+    TODO Test can now be separated for the STDOUT and STDERR
 
 v0.01 2009.01.02
-	First version released
+    First version released
 
