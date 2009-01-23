@@ -18,11 +18,10 @@ no_index:
     - xt
     - share
     - inc
-    - eg
-    - inc
-    - t
 requires:
+  File::ShareDir: 1.00
   perl: 5.008000
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.03
+  repository: http://svn1.hostlocal.com/szabgab/trunk/Perl6-Cookbook
+version: 0.04

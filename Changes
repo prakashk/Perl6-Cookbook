@@ -1,6 +1,14 @@
 Changes of Perl6::Cookbook
 
-v0.03 2008.01.21
+v0.04 2009.01.23
+    More examples
+    Special case in testing random numbers
+    Remove the need of the PARROT_PATH for the installation
+    Add load test for the Perl 5 module.
+    Add perl6_cookbook script to show the location of the
+        installed examples.
+
+v0.03 2009.01.21
     More examples
     Eliminate all TODO tests as they all pass now
 

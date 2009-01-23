@@ -40,13 +40,40 @@ my $out = catfile( $dir, 'out.txt' );
 foreach my $file (sort @files) {
 	
 	system ("$parrot $rakudo $file > $out 2> $err");
-
+	
 	foreach my $std (qw(out err)) {
 		my $expected_file = catdir('t', 'files') . substr($file, 2, -2) . $std;
 		#diag $expected_file;
 		my @expected      = slurp($expected_file);
 		my @received      = slurp( catfile( $dir, "$std.txt" ) );
 		my $name          = "STD" . uc($std) . " of $file";
+		
+		# special case for random numbers
+		if ($file =~ m/06_Generating_Random_Numbers.p6$/sxm and $std eq 'out') {
+			my $err;
+			foreach my $number (@received) {
+				if ($number < 0 or 1 <= $number) {
+					$err = $number;
+					last;
+				}
+			}
+			ok(!$err, $name) or diag $err;
+			next;
+		}
+		if ($file =~ m/06_Generating_Random_Whole_Numbers.p6$/sxm and $std eq 'out') {
+			my $err;
+			foreach my $number (@received) {
+				if ($number <= 0 or 6 < $number) {
+					$err = $number;
+					last;
+				}
+			}
+			ok(!$err, $name) or diag $err;
+			next;
+		}
+
+
+		
 		if ($TODO{$file} or $TODO{$std}{$file}) {
 			TODO: {
 				local $TODO = "Feature of $file no implemented yet in Rakudo";

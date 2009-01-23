@@ -3,7 +3,9 @@ package Perl6::Cookbook;
 use strict;
 use warnings;
 
-our $VERSION = '0.03';
+use 5.008;
+
+our $VERSION = '0.04';
 
 =head1 NAME
 
